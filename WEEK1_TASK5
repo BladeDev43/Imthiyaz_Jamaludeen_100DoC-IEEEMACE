@@ -1,0 +1,17 @@
+print('Enter The Integers\nseparate each element by space:')
+n=input()
+n=n.split()
+for i in range(len(n)):
+    n[i]=int(n[i])
+print("THE INPUT ARRAY IS:\n",n)
+
+for i in range(len(n)):
+    n[i]=n[i]**2
+print("The square of input array is:\n",n)
+
+def add(Arr):
+    _sum=0
+    for i in Arr:
+        _sum += int(i)
+    print('The sum of the input=',_sum)
+add(n)
