@@ -1,8 +1,11 @@
-def alpha_pos(text):
-    text=text.upper()
-    string=""
-    for i in text:
-        if i.isalpha():
-            string += str(ord(i)-64)
-            string += " "
-    return(string.rstrip())
+def al_pos(string):
+    con_lis = []
+
+    for l in string:
+        if l.isalpha():
+            swap = ord(l.lower()) - 64
+            con_lis.append(str(swap))
+    return "".join(con_lis)
+string = "lol"
+con_lis = al_pos(string)
+print(con_lis)
