@@ -1,9 +1,10 @@
-Pre = [1, 2, 3]
+#pre-existing array is Arr
+Arr=[1,2,3,4]
+n= input('Enter any digit=')
+n=n.split(',')
 
-times = int(input("How many numbers do you want to add? "))
+for i in range(len(n)):
+    n[i] = int(n[i])
 
-for i in range(times):
-    new = int(input("Enter a number: "))
-    Pre.append(new)
-
-print("Updated array:", Pre)
+result_array = Arr + n
+print(result_array)
