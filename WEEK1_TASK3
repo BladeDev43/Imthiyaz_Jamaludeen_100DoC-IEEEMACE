@@ -1,0 +1,9 @@
+my_array = [1, 2, 3]
+
+num_numbers = int(input("How many numbers do you want to add? "))
+
+for i in range(num_numbers):
+    new_number = int(input("Enter a number: "))
+    my_array.append(new_number)
+
+print("Updated array:", my_array)
