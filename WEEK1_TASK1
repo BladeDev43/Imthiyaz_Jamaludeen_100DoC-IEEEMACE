@@ -1,0 +1,8 @@
+def alpha_pos(text):
+    text=text.upper()
+    string=""
+    for i in text:
+        if i.isalpha():
+            string += str(ord(i)-64)
+            string += " "
+    return(string.rstrip())
