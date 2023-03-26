@@ -1,0 +1,2 @@
+num=int(input('Enter The Number ='))
+print("The Square Of The Number =",num**2)
