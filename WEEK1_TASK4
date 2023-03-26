@@ -1,0 +1,14 @@
+def add(Arrai):
+    _sum=0
+    for i in Arrai:
+        _sum += int(i)
+    print('The sum of the input=',_sum)
+
+print('Enter The Integers also separate each element by comma')
+n=input()
+n=n.split(',')
+for i in range(len(n)):
+    n[i]=int(n[i])
+print("THE INPUT ARRAY IS",n)
+
+add(n)
